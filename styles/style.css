@@ -137,7 +137,7 @@ body main {
   background: url(../img/check.svg) no-repeat;
   background-position: center;
   background-color: #008000;
-  border-color: #008000;
+  border: none;
 }
 .tasks .tasks__content .task__input__content {
   width: 90%;
@@ -180,7 +180,9 @@ body main {
 
 @media screen and (max-width: 768px) {
   .tasks .tasks__content .task__checkbox__content label::before {
-    border: 4px solid #FFFFFF;
+    border: 7px solid #FFFFFF;
+    width: 42px;
+    height: 42px;
   }
   .tasks .tasks__content .task__input__content .task__input {
     padding-right: 125px;
