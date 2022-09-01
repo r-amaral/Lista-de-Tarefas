@@ -1,0 +1,35 @@
+@import '../abstract/_variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap');
+
+body {
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    background: $background;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 57px;
+    padding-top: 66px;
+    padding-bottom: 66px;
+    font-weight: bold;
+    box-sizing: border-box;
+
+    main {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media screen and(min-width: 1024px) {
+    main {
+        max-width: 1024px;
+
+    }
+}

@@ -1,0 +1,128 @@
+@import '../abstract/_variables.scss';
+
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+
+    .tasks__content {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+        height: 64px;
+
+        .task__checkbox__content {
+
+            .task__checkbox {
+                display: none;
+            }
+
+            label {
+                &::before {
+                    content: '';
+                    width: 45px;
+                    height: 45px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    border: 7px solid $white;
+                    border-radius: 10px;
+                    background-color: transparent;
+                }
+            }
+
+            .task__checkbox:checked+label::before {
+                background: url(../img/check.svg) no-repeat;
+                background-position: 1.5px 5px;
+                background-color: $check;
+                border-color: $check;
+            }
+        }
+
+        .task__input__content {
+            width: 90%;
+            height: 64px;
+            position: relative;
+
+            .task__input {
+                width: 100%;
+                padding: 16px;
+                padding-right: 260px;
+                height: 64px;
+                background: $inputBg-task;
+                border-radius: 16px;
+                box-sizing: border-box;
+                color: $white;
+                font-size: 24px;
+            }
+
+            .task__button {
+                font-weight: 700;
+                font-size: 24px;
+                cursor: pointer;
+                outline: none;
+                position: absolute;
+                top: 18px;
+                border: none
+            }
+
+            .taks__edit__button {
+                @include linearGradient;
+                right: 156px;
+            }
+
+            .task__delete__button {
+                color: $crimson;
+                background: transparent;
+                right: 16px;
+
+            }
+        }
+    }
+}
+
+@media screen and(max-width:768px) {
+
+    .tasks {
+        .tasks__content {
+            .task__checkbox__content {
+                label {
+                    &::before {
+                        width: 41px;
+                        height: 41px;
+                    }
+                }
+            }
+
+            .task__input__content {
+
+                .task__input {
+                    padding-right: 125px;
+                    font-size: 16px;
+                    box-sizing: border-box;
+                }
+
+                .task__button {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 0;
+                }
+
+                .taks__edit__button {
+                    background: url(../img/editar.png) no-repeat;
+                    right: 70px;
+                }
+
+                .task__delete__button {
+                    background: url(../img/lixeira.png) no-repeat;
+                }
+            }
+        }
+    }
+}

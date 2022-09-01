@@ -1,0 +1,19 @@
+//Colors
+
+$background: #000000;
+$linear-gradient: linear-gradient(90deg, #EC4899 0%, #8B5CF6 100%, rgba(255, 255, 255, 0) 100%);
+$crimson: #DC143C;
+$white: #FFFFFF;
+$input-placeholder: #818181;
+$inputBg-add-task: #1F2936;
+$inputBg-task: #111827;
+$check: #008000;
+
+
+@mixin linearGradient {
+    color: black;
+    background-image: $linear-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
