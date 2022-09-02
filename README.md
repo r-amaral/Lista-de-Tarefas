@@ -11,3 +11,5 @@ Lista de tarefas desenvolvida utilizando Html, Sass e JavaScript. Salvando os da
   <img src='https://user-images.githubusercontent.com/105545187/188028867-119befd2-c5a5-480a-a9fd-3579022532df.png'>
 </div>
 
+### Deploy: https://lista-de-tarefas-green.vercel.app/
+
