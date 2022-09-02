@@ -1,5 +1,5 @@
 # Lista-de-Tarefas
-Lista de tarefas desenvolvida utilizando Html, Sass e JavaScript e salvando os dados com LocalStorage
+Lista de tarefas desenvolvida utilizando Html, Sass e JavaScript. Salvando os dados com LocalStorage
 
 ## Layout Desktop
 <div align='center'>
